@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+ id="WebApp_ID" version="4.0">
+ 
+ <display-name>MyLibrary.com</display-name>
+ <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+
+ <absolute-ordering />
+
+ <servlet>
+  <servlet-name>myFrontController</servlet-name>
+  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+ </servlet>
+
+ <servlet-mapping>
+  <servlet-name>myFrontController</servlet-name>
+  <url-pattern>/</url-pattern>
+ </servlet-mapping>
+ 
+<servlet>
+  <servlet-name>LoginStudentController</servlet-name>
+  <servlet-class>controller.LoginStudentController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>LoginStudentController</servlet-name>
+  <url-pattern>/studentLogin</url-pattern>
+</servlet-mapping>
+
+
+ <servlet>
+        <servlet-name>booksController</servlet-name>
+        <servlet-class>controller.booksController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>booksController</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>profileController</servlet-name>
+        <servlet-class>controller.profileController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>profileController</servlet-name>
+        <url-pattern>/profile</url-pattern>
+    </servlet-mapping>
+    
+    
+         <servlet>
+        <servlet-name>SearchController</servlet-name>
+        <servlet-class>controller.SearchController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchController</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>fineManageController</servlet-name>
+        <servlet-class>controller.fineManageController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fineManageController</servlet-name>
+        <url-pattern>/fine</url-pattern>
+    </servlet-mapping>
+   
+   <servlet>
+        <servlet-name>UpdateBookController</servlet-name>
+        <servlet-class>controller.UpdateBookController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateBookController</servlet-name>
+        <url-pattern>/bookUpdate</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>recieptController</servlet-name>
+        <servlet-class>controller.recieptController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>recieptController</servlet-name>
+        <url-pattern>/receipt</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BorrowersController</servlet-name>
+        <servlet-class>controller.BorrowersController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BorrowersController</servlet-name>
+        <url-pattern>/Borrowers</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>reportController</servlet-name>
+        <servlet-class>controller.reportController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reportController</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>createBook</servlet-name>
+        <servlet-class>controller.createBook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createBook</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+  <servlet>
+        <servlet-name>receipt2</servlet-name>
+        <servlet-class>controller.receipt2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>receipt2</servlet-name>
+        <url-pattern>/pay</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>updatefine</servlet-name>
+        <servlet-class>controller.updatefine</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatefine</servlet-name>
+        <url-pattern>/updateFine</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>controller.registrationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/registrationController</url-pattern>
+	
+     </servlet-mapping>
+    <servlet>
+    <servlet-name>returnbook</servlet-name>
+        <servlet-class>controller.returnbook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>returnbook</servlet-name>
+        <url-pattern>/return</url-pattern>
+
+    </servlet-mapping>
+</web-app>
